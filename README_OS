@@ -1,0 +1,43 @@
+//README.OS
+
+sudo apt update -y && sudo apt upgrade -y
+
+sudo nano /etc/default/grub
+
+sudo apt install wireshark
+
+sudo snap install nmap
+
+sudo snap connect nmap:network-control
+
+sudo apt install hashcat
+
+sudo snap install autopsy
+
+sudo snap install metasploit-framework
+
+sudo apt install nikto
+
+sudo apt install snort
+
+sudo apt install rkhunter
+sudo nano /etc/rkhunter.conf
+
+# diubah mirrors mode = 1 dan web_cmd = ""
+ 
+ sudo apt-get install lynis
+ 
+ sudo apt install clamav clamav-daemon
+ 
+#  ngubah splash screen
+ sudo cp -r logo-mac-style /usr/share/plymouth/themes
+ 
+sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/logo-mac-style/logo-mac-style.plymouth 110
+ 
+ sudo update-alternatives --config default.plymouth
+ 
+ sudo update-initramfs -u -k all
+ 
+ sudo cp -r ubuntu-logo.png /usr/share/plymouth/
+ 
+ 
